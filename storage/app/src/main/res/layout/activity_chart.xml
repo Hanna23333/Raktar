@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--on below line we are creating a swipe to refresh layout-->
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+android:orientation="vertical"
+tools:context="hu.bme.aut.android.storage.ChartActivity">
+
+<TextView
+    android:id="@+id/idTVHead"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:gravity="center"
+    android:padding="4dp"
+    android:text="Warehouse Statistics"
+    android:textAlignment="center"
+    android:textColor="@color/purple_200"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+
+<com.github.mikephil.charting.charts.PieChart
+    android:id="@+id/pieChart"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_below="@id/idTVHead"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/pieChart"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_add"
+        android:drawableTint="@color/purple_200"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Food"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_add"
+        android:drawableTint="@color/yellow"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Drink"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_add"
+        android:drawableTint="@color/red"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Book"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_add"
+        android:drawableTint="@color/teal_200"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Cleaning"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_add"
+        android:drawableTint="@color/pink"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Material"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Storage</string>
+    <string name="bought">Bought</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="piece">Piece</string>
+    <string name="already_purchased">Already purchased</string>
+    <string name="new_storage_item">New Item</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="warn_message">Ha törölni szeretnél,akkor törlési gombbal</string>
+    <string-array name="category_items">
+        <item>Food</item>
+        <item>Drink</item>
+        <item>Book</item>
+        <item>Cleaning</item>
+        <item>Material</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
